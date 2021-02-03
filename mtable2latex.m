@@ -2,7 +2,7 @@ function mtable2latex(A)
 % Ziqing Yu
 % first edition created on 02/02/2021
 
-% this script generate a latex Code to present A in a table 
+% this script generate a Latex Code to present A in a table 
 % A is a matlab matrix. 
 
 % if you want to change the presentation format, the line 17 can be

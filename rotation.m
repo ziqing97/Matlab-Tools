@@ -1,5 +1,7 @@
 function[R]=rotation(alpha,achse)
-    % Einheit: Radiant
+% 3-D rotation, alpha is the ratationsangle in radiant
+% aches are axis, aound which the rotation happens
+% the output R is the matrix for the rotation. 
     if achse == 'x'
         R=[1,0,0;0,cos(alpha),sin(alpha);0,-sin(alpha),cos(alpha)];
     elseif achse == 'y'

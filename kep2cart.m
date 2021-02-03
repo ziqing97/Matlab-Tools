@@ -1,5 +1,16 @@
-% Diese Funktion transformiert Keplerelemert nach kartesische Koordinaten.
-% M kann Vektor sein.
+% This function transform kepler elements to cartesian koordiantes
+% Ziqing Yu
+% input: a  semimajor axis
+%         e  eccentricity
+%         I  inclination
+%         OMEGA  longitude of teh ascending node
+%         omega  argument of the periapsis
+%         M  mean anomaly
+%
+% The input should be in skalar or vektors with same size
+%
+% output: r  position  
+%        v  velocity 
 function[r,v]=kep2cart(a,e,I,OMEGA,omega,M)
     GM=3.986005e14;
     E0=M;

@@ -1,5 +1,13 @@
-% Diese Funktion transformiert die kartesische Koordinaten nach
-% Keplerelement. r und v sollen beide 1*3 Vektor sein.
+% This function transfrom cartesian koordinates to kepler elements
+% Ziqing Yu
+% input: r  position 3*1 
+%        v  velocity 3*1
+% output: a  semimajor axis
+%         e  eccentricity
+%         I  inclination
+%         OMEGA  longitude of teh ascending node
+%         omega  argument of the periapsis
+%         M  mean anomaly
 function[a,e,I,OMEGA,omega,M]=cart2kep(r,v)
     GM=3.986005e14;
     %
